@@ -1,0 +1,15 @@
+# Environnements Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Conda
+.conda/
+
+# Fichiers système
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
