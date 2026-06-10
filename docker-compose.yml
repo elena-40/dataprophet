@@ -1,0 +1,17 @@
+services:
+  mlflow:
+    image: python:3.11-slim
+    container_name: mlflow_server
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlflow_data:/mlflow
+    working_dir: /mlflow
+    command: >
+      sh -c "pip install --quiet mlflow &&
+      mlflow server
+      --backend-store-uri sqlite:////mlflow/mlflow.db
+      --serve-artifacts
+      --artifacts-destination /mlflow/mlruns
+      --host 0.0.0.0
+      --port 5000"

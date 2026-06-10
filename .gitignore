@@ -13,3 +13,6 @@ venv/
 # IDE
 .vscode/
 .idea/
+
+# Docker / MLflow data
+mlflow_data/
