@@ -16,3 +16,6 @@ venv/
 
 # Docker / MLflow data
 mlflow_data/
+
+# Données de feedback
+help_data/
