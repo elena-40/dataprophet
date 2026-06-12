@@ -19,3 +19,5 @@ mlflow_data/
 
 # Données de feedback
 help_data/
+# Dataset genere par le pipeline
+data/retrain_sataset.csv
